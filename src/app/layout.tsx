@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
+import localFont from 'next/font/local'
+import Navigation from '@/app/components/NavigationBar'
+import '@/app/ui/globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const newYork = localFont({ src: './font/NewYork.otf' })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={newYork.className}>
+        {/* Navigation Bar in layout since it's shared among pages*/}
+        <Navigation />
+        {children}
+      </body>
     </html>
   )
 }
