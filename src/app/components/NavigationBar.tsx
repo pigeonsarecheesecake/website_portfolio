@@ -6,17 +6,17 @@ const NavigationBar = () => {
     const urlPath = usePathname();
     console.log(urlPath)
     return (
-        <div className=' pt-24 px-16 lg:px-64 flex justify-between'>
+        <div className=' py-24 px-8 lg:px-64 flex justify-between '>
             {/* Using / works because / correspond to a route segment (Root or Leaf) */}
             <ul className="menus flex ">
                 <li className={clsx({'underline underline-offset-8' : urlPath==="/"})}>
-                    <Link  href={"/"}>
+                    <Link href={"/"}>
                         Home
                     </Link>
                 </li>
                 <li className={clsx("pl-8",{'underline underline-offset-8' : urlPath==="/about"})}>
-                    <Link  href={"/about"}>
-                    About
+                    <Link href={"/about"}>
+                        About
                     </Link>
                 </li>
             </ul>

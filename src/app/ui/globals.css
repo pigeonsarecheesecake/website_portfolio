@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 @tailwind variants;
-/* Root is the scope of wher you can use the css variables, in this case, globally accessible */
+/* Root is the scope of where you can use the css variables, in this case, globally accessible */
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: 53, 53, 53;
   --background-rgb: 255,255,255;
 }
 
@@ -19,4 +19,17 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-start-rgb));
+}
+
+/* Added debug utility class */
+@layer utilities{
+  .debug{
+    border: 5px solid red;
+  }
+  .debug-2{
+    border: 5px solid blue;
+  }
+  .debug-3{
+    border: 5px solid green;
+  }
 }
