@@ -5,16 +5,16 @@ export default function Home() {
   return (
     <main className="min-h-screen items-center">
       {/* Landing Page */}
-      <section className="landing-page px-8 lg:px-64  flex flex-wrap justify-between ">
+      <section className="landing-page px-8 md:px-12 lg:px-64  flex flex-wrap justify-between ">
         {/* Landing Left side */}
         <div className="landing-page-left flex flex-col justify-center ">
-          <h1 className='text-4xl lg:text-6xl pb-4'>Hi, I'm William Ryuputra</h1>
-          <p className='lg:text-2xl'>Software Engineer  |  UI/UX Designer  |  Technical Specialist</p>
+          <h1 className='text-4xl md:text-6xl pb-4'>Hi, I'm William Ryuputra</h1>
+          <p className='md:text-2xl'>Software Engineer  |  UI/UX Designer  |  Technical Specialist</p>
           {/* Socials */}
-          <ul className=" socials-logos pt-4 flex lg:hidden ">
+          <ul className="socials-logos pt-4 flex md:hidden ">
               <a href='#'>
                   <svg width="20" height="20" viewBox="0 0 48 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M23.9824 1.25698e-05C12.2233 -0.0119478 2.19403 8.5128 0.31124 20.1202C-1.57154 31.7277 5.24886 42.9856 16.4089 46.6912C17.6148 46.9119 18.0412 46.1619 18.0412 45.5294C18.0412 44.8971 18.0412 43.4558 18.0412 41.4558C11.35 42.9119 9.9383 38.2352 9.9383 38.2352C9.4944 36.7858 8.55134 35.5406 7.27653 34.7206C5.11476 33.25 7.45301 33.25 7.45301 33.25C8.98847 33.4669 10.3388 34.3779 11.1148 35.7206C11.7719 36.9123 12.8766 37.7929 14.1847 38.1683C15.4927 38.5435 16.8964 38.3825 18.0853 37.7206C18.1777 36.5108 18.6992 35.3737 19.5559 34.5148C14.2324 33.9119 8.64418 31.8529 8.64418 22.75C8.60763 20.3721 9.48695 18.0711 11.1 16.3235C10.3816 14.2559 10.4656 11.9939 11.3354 9.9853C11.3354 9.9853 13.35 9.33824 17.9236 12.4412C21.8509 11.3629 25.9962 11.3629 29.9237 12.4412C34.4972 9.33824 36.4972 9.9853 36.4972 9.9853C37.3791 11.9727 37.4839 14.2184 36.7912 16.2794C38.4043 18.0269 39.2837 20.3279 39.2472 22.7058C39.2472 31.9119 33.6443 33.9264 28.3059 34.4706C29.4641 35.6348 30.0597 37.2446 29.9382 38.8823C29.9382 42.0883 29.9382 44.6764 29.9382 45.4558C29.9382 46.2352 30.3647 46.8383 31.5853 46.6029C42.6128 42.8014 49.2995 31.61 47.4214 20.0977C45.5432 8.58562 35.6464 0.0995542 23.9824 1.25698e-05Z" fill="currentColor"/>
+                      <path fillRule="evenodd" clipRule="evenodd" d="M23.9824 1.25698e-05C12.2233 -0.0119478 2.19403 8.5128 0.31124 20.1202C-1.57154 31.7277 5.24886 42.9856 16.4089 46.6912C17.6148 46.9119 18.0412 46.1619 18.0412 45.5294C18.0412 44.8971 18.0412 43.4558 18.0412 41.4558C11.35 42.9119 9.9383 38.2352 9.9383 38.2352C9.4944 36.7858 8.55134 35.5406 7.27653 34.7206C5.11476 33.25 7.45301 33.25 7.45301 33.25C8.98847 33.4669 10.3388 34.3779 11.1148 35.7206C11.7719 36.9123 12.8766 37.7929 14.1847 38.1683C15.4927 38.5435 16.8964 38.3825 18.0853 37.7206C18.1777 36.5108 18.6992 35.3737 19.5559 34.5148C14.2324 33.9119 8.64418 31.8529 8.64418 22.75C8.60763 20.3721 9.48695 18.0711 11.1 16.3235C10.3816 14.2559 10.4656 11.9939 11.3354 9.9853C11.3354 9.9853 13.35 9.33824 17.9236 12.4412C21.8509 11.3629 25.9962 11.3629 29.9237 12.4412C34.4972 9.33824 36.4972 9.9853 36.4972 9.9853C37.3791 11.9727 37.4839 14.2184 36.7912 16.2794C38.4043 18.0269 39.2837 20.3279 39.2472 22.7058C39.2472 31.9119 33.6443 33.9264 28.3059 34.4706C29.4641 35.6348 30.0597 37.2446 29.9382 38.8823C29.9382 42.0883 29.9382 44.6764 29.9382 45.4558C29.9382 46.2352 30.3647 46.8383 31.5853 46.6029C42.6128 42.8014 49.2995 31.61 47.4214 20.0977C45.5432 8.58562 35.6464 0.0995542 23.9824 1.25698e-05Z" fill="currentColor"/>
                   </svg>
               </a>
               <span className='px-2 text-l'>|</span>
@@ -30,8 +30,9 @@ export default function Home() {
         </div>
         {/* Landing Right side */}
         <div className="landing-page-right">
-          <Image className="hidden lg:block" src="/logo.png" width={500} height={500} alt='Landing page logo' />
-          <Image className="lg:hidden" src="/logo.png" width={200} height={200} alt='Landing page logo' />
+          <Image className="hidden 2xl:block" src="/logo.png" width={500} height={500} alt='Landing page logo' />
+          <Image className="hidden md:block 2xl:hidden" src="/logo.png" width={250} height={250} alt='Landing page logo' />
+          <Image className="md:hidden" src="/logo.png" width={200} height={200} alt='Landing page logo' />
         </div>
       </section>
       {/* <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
