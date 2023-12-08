@@ -1,11 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link';
+import Projects from './components/Projects';
 
 export default function Home() {
   return (
     <main className="min-h-screen items-center">
       {/* Landing Page */}
-      <section className="landing-page px-8 md:px-12 lg:px-64  flex flex-wrap justify-between ">
+      <section className="landing-page px-8 md:px-12 lg:px-64  flex flex-wrap justify-between  ">
         {/* Landing Left side */}
         <div className="landing-page-left flex flex-col justify-center ">
           <h1 className='text-4xl md:text-6xl pb-4'>Hi, I'm William Ryuputra</h1>
@@ -35,6 +36,17 @@ export default function Home() {
           <Image className="md:hidden" src="/logo.png" width={200} height={200} alt='Landing page logo' />
         </div>
       </section>
+      {/* Projects */}
+      <Projects />
+
+
+
+
+
+
+
+
+
       {/* <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Get started by editing&nbsp;

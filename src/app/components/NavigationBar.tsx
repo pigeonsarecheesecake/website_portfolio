@@ -4,7 +4,6 @@ import Link from 'next/link'
 import clsx from 'clsx'
 const NavigationBar = () => {
     const urlPath = usePathname();
-    console.log(urlPath)
     return (
         <div className=' py-24 px-8 md:px-12 lg:px-64 flex justify-between '>
             {/* Using / works because / correspond to a route segment (Root or Leaf) */}
