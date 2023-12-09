@@ -32,4 +32,10 @@ body {
   .debug-3{
     border: 5px solid green;
   }
+  /* Styling for Intersection Observer */
+  .desktop-show{
+    opacity: 1;
+    top:0
+  }
 }
+
