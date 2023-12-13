@@ -69,13 +69,13 @@ const Projects = () => {
     ]
     
     return (
-        <section className="px-8 md:px-12 lg:px-64 py-12 ">
-            <ul className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-4 gap-4 min-h-[200vh] md:min-h-screen">
+        
+            <ul className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-4 min-h-[200vh] md:min-h-screen gap-2">
                 {/* Generates Multiple Projects */}
                 {projects.map((project)=>{
                             return(
-                                <Link ref={project.reference} key={project.projectId} className={`${project.gridSize}  pt-6 row-span-2 opacity-0 transition-all duration-[1500ms]  relative top-8 ${project.inView ? "desktop-show" : ""}`} href={"/about"}>
-                                    <li className={`flex items-center justify-center rounded-3xl h-full ${project.backgroundColor} p-4`}>
+                                <Link ref={project.reference} key={project.projectId} className={`${project.gridSize}  row-span-2 opacity-0 transition-all duration-[1500ms]  relative top-8 ${project.inView ? "desktop-show" : ""} flex justify-center items-center `} href={"/about"}>
+                                    <li className={`flex items-center justify-center rounded-3xl h-full ${project.backgroundColor} p-4 w-[98%] h-[95%] transition-all ease-linear hover:w-full hover:h-full `}>
                                         <Image src={project.imgPath} width={project.width} height={0} alt={`Project ${project.projectName}`}/>
                                     </li>
                                 </Link>
@@ -84,7 +84,7 @@ const Projects = () => {
                     )
                 }
             </ul>
-        </section>
+      
         )
 }
 
