@@ -42,7 +42,7 @@ const Projects = () => {
             backgroundColor:"bg-[#BBA9D1]",
             imgPath:"/to-do.png",
             gridSize:"md:col-span-1",
-            width:150,
+            width:200,
             reference:ref2,
             inView:inView2
         },
@@ -70,12 +70,12 @@ const Projects = () => {
     
     return (
         
-            <ul className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-4 min-h-[200vh] md:min-h-screen gap-2">
+            <ul className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-4 min-h-[200vh] md:min-h-screen gap-x-1">
                 {/* Generates Multiple Projects */}
                 {projects.map((project)=>{
                             return(
-                                <Link ref={project.reference} key={project.projectId} className={`${project.gridSize}  row-span-2 opacity-0 transition-all duration-[1500ms]  relative top-8 ${project.inView ? "desktop-show" : ""} flex justify-center items-center `} href={"/about"}>
-                                    <li className={`flex items-center justify-center rounded-3xl h-full ${project.backgroundColor} p-4 w-[98%] h-[95%] transition-all ease-linear hover:w-full hover:h-full `}>
+                                <Link ref={project.reference} key={project.projectId} className={`${project.gridSize}  row-span-2 opacity-0 transition-all duration-[1500ms] relative top-8 ${project.inView ? "desktop-show" : ""} flex justify-center items-center `} href={"/about"}>
+                                    <li className={`flex items-center justify-center rounded-3xl h-full ${project.backgroundColor} p-4 w-[98%] h-[95%] transition-all ease-linear lg:hover:w-full lg:hover:h-full `}>
                                         <Image src={project.imgPath} width={project.width} height={0} alt={`Project ${project.projectName}`}/>
                                     </li>
                                 </Link>
