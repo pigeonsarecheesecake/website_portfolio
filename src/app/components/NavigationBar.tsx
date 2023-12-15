@@ -5,7 +5,7 @@ import clsx from 'clsx'
 const NavigationBar = () => {
     const urlPath = usePathname();
     return (
-        <div className=' py-24 px-8 md:px-12 lg:px-64 flex justify-between '>
+        <div className=' py-24 px-8 md:px-12 lg:px-72  flex justify-between '>
             {/* Using / works because / correspond to a route segment (Root or Leaf) */}
             <ul className="menus flex ">
                 <li className={clsx({'underline underline-offset-8' : urlPath==="/"})}>
