@@ -5,7 +5,7 @@ export default function Home() {
   return (
   <main className="min-h-screen items-center">
     {/* Landing Page */}
-    <section className="px-8 md:px-12 lg:px-64  flex flex-wrap justify-between  ">
+    <section className="px-8 md:px-12 lg:px-72 flex flex-wrap justify-between  ">
       {/* Landing Left side (Title) */}
       <div className="flex flex-col justify-center ">
         <h1 className='text-4xl md:text-6xl pb-4'>Hi, I'm William Ryuputra</h1>
@@ -37,12 +37,12 @@ export default function Home() {
     </section>
     
     {/* Projects */}
-    <section className="px-8 md:px-12 lg:px-64 py-12 ">
+    <section className="px-8 md:px-12 lg:px-64 ">
       <Projects />
     </section>
 
     {/* Experience */}
-    <section className='px-8 md:px-12 lg:px-64 grid grid-cols-1 xl:grid-cols-2 min-h-[70vh] py-12 gap-8'>
+    <section className='px-8 md:px-12 lg:px-72 grid grid-cols-1 xl:grid-cols-2 min-h-[70vh] py-12 gap-8'>
       <Experience />
     </section>
   </main>

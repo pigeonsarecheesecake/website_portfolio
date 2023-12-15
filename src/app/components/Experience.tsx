@@ -1,11 +1,4 @@
 const Experience = () => {
-    const experiences = [
-        {
-            experienceId:1,
-            title:"Front-End Developer Intern",
-            description:"3D Circuitry | June 2023 - Current"
-        }
-    ]
     return (
     <>
     {/* Experience Left Side (Title) */}

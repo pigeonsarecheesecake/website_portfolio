@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import Navigation from '@/app/components/NavigationBar'
+import Footer from './components/Footer'
 import '@/app/ui/globals.css'
 
 const newYork = localFont({ src: './font/NewYork.otf' })
@@ -21,6 +22,7 @@ export default function RootLayout({
         {/* Navigation Bar in layout since it's shared among pages*/}
         <Navigation />
         {children}
+        <Footer />
       </body>
     </html>
   )
