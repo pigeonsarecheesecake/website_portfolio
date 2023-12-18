@@ -4,7 +4,7 @@ import Navigation from '@/app/components/NavigationBar'
 import Footer from './components/Footer'
 import '@/app/ui/globals.css'
 
-const newYork = localFont({ src: './font/New Spirit SemiBold.otf' })
+const newYork = localFont({ src: './font/New Spirit Medium.otf' })
 
 export const metadata: Metadata = {
   title: 'Create Next App',

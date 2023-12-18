@@ -42,7 +42,7 @@ export default function Home() {
     </section>
 
     {/* Experience */}
-    <section className='px-8 md:px-12 lg:px-72 grid grid-cols-1 xl:grid-cols-2 min-h-[70vh] py-12 gap-8'>
+    <section className='px-8 md:px-12 lg:px-72 min-h-[70vh] py-12 md:py-36'>
       <Experience />
     </section>
   </main>

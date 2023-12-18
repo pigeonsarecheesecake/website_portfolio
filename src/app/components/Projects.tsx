@@ -67,7 +67,6 @@ const Projects = () => {
     ]
     
     return (
-        
             <ul className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-4 min-h-[200vh] gap-10 md:min-h-screen">
                 {/* Generates Multiple Projects */}
                 {projects.map((project)=>{
