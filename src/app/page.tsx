@@ -29,7 +29,7 @@ export default function Home() {
         </ul>
       </div>
       {/* Landing Right side (Logo) */}
-      <div className='rotate-12 lg:hover:rotate-0 '>
+      <div className='rotate-12 lg:hover:rotate-0 transition-all duration-[500ms]'>
         <Image className="hidden 2xl:block" src="/logo.png" width={500} height={500} alt='Landing page logo' />
         <Image className="hidden md:block 2xl:hidden" src="/logo.png" width={250} height={250} alt='Landing page logo' />
         <Image className="md:hidden" src="/logo.png" width={200} height={200} alt='Landing page logo' />
