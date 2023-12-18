@@ -50,7 +50,7 @@ const Projects = () => {
             backgroundColor:"bg-[#7488B9]",
             imgPath:"/weather.png",
             gridSize:"md:col-span-1",
-            width:300,
+            width:250,
             reference:ref3,
             inView:inView3
         },
@@ -60,7 +60,7 @@ const Projects = () => {
             backgroundColor:"bg-[#7BA880]",
             imgPath:"/capstone.png",
             gridSize:"md:col-span-2",
-            width:300,
+            width:250,
             reference:ref4,
             inView:inView4
         }

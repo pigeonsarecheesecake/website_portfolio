@@ -5,7 +5,7 @@ export default function Home() {
   return (
   <main className="min-h-screen items-center">
     {/* Landing Page */}
-    <section className="px-8 md:px-12 lg:px-72 flex flex-wrap justify-between  ">
+    <section className="px-8 md:px-12 lg:px-48 2xl:px-72 flex flex-wrap justify-between  ">
       {/* Landing Left side (Title) */}
       <div className="flex flex-col justify-center ">
         <h1 className='text-4xl md:text-6xl pb-4'>Hi, I'm William Ryuputra</h1>
@@ -30,19 +30,19 @@ export default function Home() {
       </div>
       {/* Landing Right side (Logo) */}
       <div className='rotate-12 lg:hover:rotate-0 transition-all duration-[500ms]'>
-        <Image className="hidden 2xl:block" src="/logo.png" width={500} height={500} alt='Landing page logo' />
+        <Image className="hidden 2xl:block" src="/logo.png" width={400} height={500} alt='Landing page logo' />
         <Image className="hidden md:block 2xl:hidden" src="/logo.png" width={250} height={250} alt='Landing page logo' />
         <Image className="md:hidden" src="/logo.png" width={200} height={200} alt='Landing page logo' />
       </div>
     </section>
     
     {/* Projects */}
-    <section className="py-12 px-8 md:px-12 lg:px-72">
+    <section className="py-12 px-8 md:px-12 lg:px-48 2xl:px-72">
       <Projects />
     </section>
 
     {/* Experience */}
-    <section className='px-8 md:px-12 lg:px-72 min-h-[70vh] py-12 md:py-36'>
+    <section className='px-8 md:px-12 lg:px-48 2xl:px-72 min-h-[70vh] py-12 md:py-36'>
       <Experience />
     </section>
   </main>
