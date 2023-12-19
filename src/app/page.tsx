@@ -3,12 +3,12 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 export default function Home() {
   return (
-  <main className="min-h-screen items-center">
+  <main className="min-h-screen items-center px-8 md:px-12 lg:px-48 2xl:px-72">
     {/* Landing Page */}
-    <section className="px-8 md:px-12 lg:px-48 2xl:px-72 flex flex-wrap justify-between  ">
+    <section className=" flex flex-wrap justify-between  ">
       {/* Landing Left side (Title) */}
       <div className="flex flex-col justify-center ">
-        <h1 className='text-4xl md:text-6xl pb-4'>Hi, I'm William Ryuputra</h1>
+        <h1 className='text-4xl md:text-6xl pb-4'>Hi, I'm William Ryuputra </h1>
         <p className='md:text-2xl'>Software Engineer  |  UI/UX Designer  |  Technical Specialist</p>
         {/* Socials */}
         <ul className="socials-logos pt-4 flex md:hidden ">
@@ -37,12 +37,12 @@ export default function Home() {
     </section>
     
     {/* Projects */}
-    <section className="py-12 px-8 md:px-12 lg:px-48 2xl:px-72">
+    <section className="py-12">
       <Projects />
     </section>
 
     {/* Experience */}
-    <section className='px-8 md:px-12 lg:px-48 2xl:px-72 min-h-[70vh] py-12 md:py-36'>
+    <section className='min-h-[70vh] py-12 md:py-36'>
       <Experience />
     </section>
   </main>

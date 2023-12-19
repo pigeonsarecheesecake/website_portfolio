@@ -4,7 +4,8 @@ import Navigation from '@/app/components/NavigationBar'
 import Footer from './components/Footer'
 import '@/app/ui/globals.css'
 
-const newYork = localFont({ src: './font/New Spirit Medium.otf' })
+const newSpirit = localFont({ src: './font/New Spirit Medium.otf' })
+
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -18,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={newYork.className}>
+      <body className={newSpirit.className}>
         {/* Navigation Bar in layout since it's shared among pages*/}
         <Navigation />
         {children}
