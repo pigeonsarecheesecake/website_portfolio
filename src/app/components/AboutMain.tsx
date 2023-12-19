@@ -5,7 +5,8 @@ const newSpiritNormal= localFont({ src: '../font/New Spirit Regular.otf' })
 const AboutMain = () => {
   return (
     <>
-    <div className= {`col-span-2 xl:col-span-1 flex flex-col text-white bg-[#383838] p-16 ${newSpiritNormal.className}`} >
+    {/* About me text */}
+    <div className= {`col-span-2 xl:col-span-1 flex flex-col text-white bg-[#383838] p-8 md:p-16 ${newSpiritNormal.className}`} >
         <h1 className='text-4xl md:text-6xl pb-6 '>About me 🌱</h1>
         <hr className=" w-12 " />
         <p className=" py-8">
@@ -17,9 +18,8 @@ exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             <a className="underline" href="">Resume ↗</a>
             <a className="underline" href="">LinkedIn ↗</a>
         </div>
-        
     </div>
-    {/* About Picture */}
+    {/* About me picture */}
     <div className=" border-2 border-black col-span-2 xl:col-span-1 min-h-[550px] xl:min-h-[700px] ">
         <div className="border-b-2 border-black h-12 flex justify-between px-4">
             {/* About picture dots */}
