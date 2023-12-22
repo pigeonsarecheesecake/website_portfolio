@@ -40,15 +40,12 @@ const AboutPictures = () => {
         }
     ]
   return (
-    <ul className="grid grid-cols-1 md:grid-cols-2  gap-10 relative">
-        <li className='absolute -bottom-10 right-0 lg:-bottom-10 lg:-right-20 text-6xl lg:text-9xl'>
-            <p className="">🖊️</p>
-        </li>
+    <ul className="grid grid-cols-1 md:grid-cols-2 gap-24">
         {
             polaroids.map(
                 (polaroid)=>{
                     return(
-                        <li key={polaroid.polaroidId} className={`flex flex-col items-center  pt-4 min-h-[500px] bg-[#FAFAFA] shadow-[15px_25px_15px_5px_rgba(0,0,0,0.3)] `}>
+                        <li key={polaroid.polaroidId} className={`flex flex-col items-center  pt-4 min-h-[500px] bg-[#FAFAFA] shadow-[20px_20px_16px_0px_rgba(0,0,0,.1)] `}>
                             <div className={`w-[90%] h-[65%] bg-cover bg-no-repeat bg-center border shadow-inner `} style={{backgroundImage : `url(${polaroid.imgSource}) `}}>
                             </div>
                             {polaroid.handWriting}
