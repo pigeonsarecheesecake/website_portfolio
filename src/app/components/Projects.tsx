@@ -32,7 +32,8 @@ const Projects = () => {
             gridSize:"md:col-span-2",
             width:300,
             reference:ref1,
-            inView:inView
+            inView:inView,
+            filePath:"/3d-circuitry-website"
         },
         {
             projectId:2,
@@ -42,7 +43,8 @@ const Projects = () => {
             gridSize:"md:col-span-1",
             width:150,
             reference:ref2,
-            inView:inView2
+            inView:inView2,
+            filePath:"/weather-forecast"
         },
         {
             projectId:3,
@@ -71,7 +73,7 @@ const Projects = () => {
                 {/* Generates Multiple Projects */}
                 {projects.map((project)=>{
                             return(
-                                <Link ref={project.reference} key={project.projectId} className={`${project.gridSize} rounded-3xl row-span-2 opacity-0 transition-all duration-[1500ms] relative top-8 ${project.inView ? "show" : ""} flex justify-center items-center `} href={"/about"}>
+                                <Link ref={project.reference} key={project.projectId} className={`${project.gridSize} rounded-3xl row-span-2 opacity-0 transition-all duration-[1500ms] relative top-8 ${project.inView ? "show" : ""} flex justify-center items-center `} href={`${project.filePath}`}>
                                     <li className={` flex items-center justify-center rounded-2xl  ${project.backgroundColor} w-full h-full transition-all ease-linear lg:hover:scale-105 `}>
                                         <Image className="" src={project.imgPath} width={project.width} height={500} alt={`Project ${project.projectName}`}/>
                                         <p className="absolute bottom-0 py-6 md:p-10  md:bottom-0 md:right-0 white text-white text-xl text-center md:text-start">{`${project.projectName} ↗`}</p>
