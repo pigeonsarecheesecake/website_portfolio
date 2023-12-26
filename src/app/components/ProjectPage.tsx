@@ -1,14 +1,24 @@
 interface ProjectPageProps {
     title:string,
     description:string,
+    intro:string,
     mainImage:string,
     gif1:string,
     gif2:string,
     gif3?:string,
-    gif4?:string
+    gif4?:string,
+    role:string,
+    website:string,
+    technologies:string,
+    feature1:string,
+    feature1Description:string,
+    feature2:string,
+    feature2Description:string,
+    feature3?:string,
+    feature3Description?:string
 }
 
-const ProjectPage = ({title,description,mainImage,gif1,gif2,gif3,gif4}:ProjectPageProps) => {
+const ProjectPage = ({title,description,intro,mainImage,gif1,gif2,gif3,gif4,role,website,technologies,feature1,feature1Description,feature2,feature2Description,feature3,feature3Description}:ProjectPageProps) => {
   return (
     <main className="min-h-screen pb-12 lg:pt-12 lg:pb-48 px-8 md:px-12 lg:px-56 2xl:px-96 flex flex-col items-center">
       {/* Project Title */}
@@ -18,70 +28,79 @@ const ProjectPage = ({title,description,mainImage,gif1,gif2,gif3,gif4}:ProjectPa
       </section>
 
       {/* Main Image */}
-      <section className="border border-black border-4 lg:border-8 rounded-3xl min-h-[25vh] md:min-h-[70vh] w-full my-24 bg-cover bg-no-repeat bg-center" style={{backgroundImage : `url(${mainImage})`}}></section>
+      <section className="border border-black border-4 lg:border-1 min-h-[25vh] md:min-h-[70vh] w-full mt-24 bg-cover bg-no-repeat bg-center" style={{backgroundImage : `url(${mainImage})`}}></section>
       
-      {/* Role */}
-      <section className="grid grid-cols-1 xl:grid-cols-3 w-full my-12 lg:my-24 gap-12">
-        <div className="  ">
-            <h2 className="underline pb-6 text-2xl">Role</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi numquam vero aut illum in, reprehenderit voluptate explicabo voluptatem eaque? Eos odio animi debitis ab qui quod aliquam saepe vitae provident!</p>
+      {/* Project Description */}
+      <section className="grid grid-cols-1 xl:grid-cols-3 w-full my-12 lg:my-24 gap-12 lg:w-[70%]">
+        {/* Intro */}
+        <div className="col-span-1 xl:col-span-3">
+            <h2 className="underline pb-6 text-3xl">Intro</h2>
+            <p className="whitespace-pre-wrap text-justify leading-8 " >{intro}</p>
         </div>
-        <div >
-          <h2 className="underline pb-6 text-2xl">Responsibilities</h2>
-          <p className="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni consequatur doloremque delectus blanditiis, repellat earum labore! Ipsum quos qui hic ullam consequuntur sit nam aut expedita molestiae, voluptates eligendi repellat?</p>
+        {/* Role */}
+        <div>
+            <h2 className="underline pb-6 text-2xl text-3xl">Role</h2>
+            <p className="whitespace-pre-wrap">{role}</p>
         </div>
-        <div >
+        {/* Website */}
+        <div>
           <h2 className="underline pb-6 text-2xl">Website</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores ipsam nemo dolore a rerum debitis distinctio, reprehenderit dolores expedita reiciendis aut perspiciatis iure unde corrupti suscipit saepe ratione? Sequi, asperiores?</p>
+          <p>{website}</p>
         </div>
-        <div >
+        {/* Technologies */}
+        <div>
           <h2 className="underline pb-6 text-2xl">Technologies</h2>
-          <p>Next.js, Tailwind</p>
+          <p className="leading-8">{technologies}</p>
         </div>
       </section>
    
-      <section className="w-full">
+      <section className="w-full flex flex-col items-center mb-36">
         {/* Gif 1 */}
-        <div className="border border-black border-4 lg:border-8 rounded-3xl min-h-[25vh] md:min-h-[70vh] my-24 bg-cover bg-no-repeat bg-center " style={{backgroundImage : `url(${gif1})`}}></div>
+        <div className="border border-black border-4 lg:border-1 min-h-[25vh] md:min-h-[70vh] mb-16 bg-cover bg-no-repeat bg-center w-full" style={{backgroundImage : `url(${gif1})`}}></div>
         {/* Gif 1 description */}
-        <div>
-          <h2 className="underline pb-6 text-2xl">Classroom Page</h2>
-          <p></p>
+        <div className="lg:w-[70%]">
+          <h2 className="pb-6 text-2xl underline text-center">{feature1}</h2>
+          <p className="whitespace-pre-wrap text-justify leading-8">{feature1Description}</p>
         </div>
+        <hr className="border-[#353535] mt-12 w-[20%] "></hr>
       </section>
 
-      <section className="w-full">
+
+      <section className="w-full flex flex-col items-center mb-36">
         {/* Gif 2 */}
-        <div className="border border-black border-4 lg:border-8 rounded-3xl min-h-[25vh] md:min-h-[70vh] my-24 "></div>
+        <div className="border border-black border-4 lg:border-1 min-h-[25vh] md:min-h-[70vh] mb-16 bg-cover bg-no-repeat bg-center w-full" style={{backgroundImage : `url(${gif2})`}}></div>
         {/* Gif 2 description */}
-        <div>
-          <h2 className="underline pb-6 text-2xl">Technologies</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aliquam repudiandae molestias, maiores quisquam necessitatibus asperiores deleniti. Ipsum possimus quibusdam, labore nihil delectus unde facere. Ratione vero omnis quasi. Corporis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore ipsum tenetur dolor, reprehenderit dolorem animi et expedita? Saepe, vero totam porro, et alias dolorem beatae sit, ad velit optio magni.</p>
+        <div className="lg:w-[70%]">
+          <h2 className="pb-6 text-2xl underline  text-center">{feature2}</h2>
+          <p className="whitespace-pre-wrap text-justify leading-8">{feature2Description}</p>
         </div>
+        <hr className="border-[#353535] mt-12 w-[20%] "></hr>
       </section>
 
       {/* For bigger projects, gif3 and gif4 will be rendered conditionally */}
       {gif3 && 
-        <section className="w-full">
-            {/* Gif 3 */}
-          <div className="border border-black border-4 lg:border-8 rounded-3xl min-h-[25vh] md:min-h-[70vh] my-24 "></div>
-          {/* Gif 3 description */}
-          <div>
-            <h2 className="underline pb-6 text-2xl">Technologies</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aliquam repudiandae molestias, maiores quisquam necessitatibus asperiores deleniti. Ipsum possimus quibusdam, labore nihil delectus unde facere. Ratione vero omnis quasi. Corporis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore ipsum tenetur dolor, reprehenderit dolorem animi et expedita? Saepe, vero totam porro, et alias dolorem beatae sit, ad velit optio magni.</p>
-          </div>
-        </section>
+        <section className="w-full flex flex-col items-center">
+        {/* Gif 3 */}
+        <div className="border border-black border-4 lg:border-1 min-h-[25vh] md:min-h-[70vh] mb-16 bg-cover bg-no-repeat bg-center w-full" style={{backgroundImage : `url(${gif3})`}}></div>
+        {/* Gif 3 description */}
+        <div className="lg:w-[70%]">
+          <h2 className="pb-6 text-2xl underline  text-center">{feature3}</h2>
+          <p className="whitespace-pre-wrap text-justify leading-8">{feature3Description}</p>
+        </div>
+        <hr className="border-[#353535] mt-12 w-[20%] "></hr>
+      </section>
       }
       {gif4 && 
-        <section className="w-full">
-            {/* Gif 4 */}
-          <div className="border border-black border-4 lg:border-8 rounded-3xl min-h-[25vh] md:min-h-[70vh] my-24 "></div>
-          {/* Gif 4 description */}
-          <div>
-            <h2 className="underline pb-6 text-2xl">Technologies</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aliquam repudiandae molestias, maiores quisquam necessitatibus asperiores deleniti. Ipsum possimus quibusdam, labore nihil delectus unde facere. Ratione vero omnis quasi. Corporis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore ipsum tenetur dolor, reprehenderit dolorem animi et expedita? Saepe, vero totam porro, et alias dolorem beatae sit, ad velit optio magni.</p>
-          </div>
-        </section>
+        <section className="w-full flex flex-col items-center mb-36">
+        {/* Gif 1 */}
+        <div className="border border-black border-4 lg:border-1 min-h-[25vh] md:min-h-[70vh] mb-16 bg-cover bg-no-repeat bg-center w-full" style={{backgroundImage : `url(${gif1})`}}></div>
+        {/* Gif 1 description */}
+        <div className="lg:w-[70%]">
+          <h2 className="pb-6 text-2xl underline  text-center">{feature1}</h2>
+          <p className="whitespace-pre-wrap text-justify leading-8">{feature1Description}</p>
+        </div>
+        <hr className="border-[#353535] mt-12 w-[20%] "></hr>
+      </section>
       }
     </main>
   )
