@@ -7,23 +7,25 @@ const AboutMain = () => {
     <>
     {/* About me text */}
     <div className= {`col-span-2 xl:col-span-1 flex flex-col text-white bg-[#383838] p-8 md:p-16 ${newSpiritNormal.className}`} >
-        <h1 className='text-4xl md:text-6xl pb-6 '>About me 🌱</h1>
+        <h1 className='text-4xl md:text-6xl pb-6 '>Welcome 🌱</h1>
         <hr className=" w-12 " />
-        <p className=" py-8">
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-exercitatnsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
+        <p className=" py-8 whitespace-pre-wrap">{`My name is William Ryuputra, and I'm a software engineer 🖥️. Why do I torture myself by spending hours just to find a missing bracket or Googling how to center a div for the 100th time, you ask? Well, you can compare it to enjoying spicy food. Spiciness is a sensation. It's an uncomfortable feeling that deters some, but for people like me, the "painful" sensation is what makes it addicting.
 
-        </p>
+In this field, not only do I get to build pretty things, but I also craft programs that make life easier for everyone. And when I say everyone, I mean every single person. It gives me the chance to contribute directly or indirectly to the community.
+
+My primary language is JavaScript. Besides programming, I enjoy reading books and designing apparel and websites. Books that have shaped who I am today include "Atomic Habits" by James Clear, "Ego is the Enemy" by Ryan Holiday, and "4,000 Weeks" by Oliver Burkeman.
+
+If you're reading this, don't stop chasing your dreams. Fall in love with the process, and you'll find it's easier to change yourself for the better than trying to change others. Confidence lies within humility, while insecurity lies within arrogance. Be kind!`}</p>
         <div className="flex flex-col  ">
-            <a className="underline" href="">Resume ↗</a>
-            <a className="underline" href="">LinkedIn ↗</a>
+            <a className="underline" href="/Ryuputra_William_Resume.pdf" target='_blank'>Resume ↗</a>
+            <a className="underline" href="https://www.linkedin.com/in/william-ryuputra-470856197/" target='_blank'>LinkedIn ↗</a>
         </div>
     </div>
-    {/* About me picture */}
+    {/* About me picture container */}
     <div className=" border-2 border-black col-span-2 xl:col-span-1 min-h-[550px] xl:min-h-[700px] ">
+        {/* About me picture tab */}
         <div className="border-b-2 border-black h-12 flex justify-between px-4">
-            {/* About picture dots */}
+            {/* About me picture dots */}
             <div className="flex items-center">
                 <svg width="74" height="16" viewBox="0 0 74 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="8" cy="8" r="8" fill="#353535"/>
@@ -31,7 +33,7 @@ exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     <circle cx="66" cy="8" r="8" fill="#353535"/>
                 </svg>
             </div>
-            {/* About picture close button */}
+            {/* About me picture close button */}
             <div className="flex items-center ">
                 <svg width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="0.5" y="0.743904" width="23" height="25.6341" fill="#D9D9D9" stroke="#353535"/>
@@ -39,10 +41,8 @@ exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </svg>
             </div>
         </div>
-        {/* <Image /> */}
-        <div className="h-[90%] border-b-2 border-black bg-[url('/portrait.jpg')] bg-cover bg-no-repeat bg-center">
-
-        </div>
+        {/* About me picture*/}
+        <div className="h-[90%] border-b-2 border-black bg-[url('/portrait.jpg')] bg-cover bg-no-repeat bg-center"></div>
     </div>
     </>
   )

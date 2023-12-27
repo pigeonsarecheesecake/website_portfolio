@@ -78,7 +78,7 @@ const ProjectPage = ({title,description,intro,mainImage,gif1,gif2,gif3,gif4,role
       </section>
 
       {/* Main Image */}
-      <section ref={ref2} className={`border border-black border-4 lg:border-1 min-h-[25vh] md:min-h-[30vh] lg:min-h-[70vh] w-full mt-24 bg-cover bg-no-repeat bg-center opacity-0 transition-all duration-[1500ms] relative top-8 ${inView2 ? "show" : ""} `} style={{backgroundImage : `url(${mainImage})`}}></section>
+      <section ref={ref2} className={`border border-black border-4 lg:border-1 min-h-[50vw] lg:min-h-[350px] xl:min-h-[570px] w-full mt-24 bg-cover bg-no-repeat bg-center opacity-0 transition-all duration-[1500ms] relative top-8 ${inView2 ? "show" : ""} `} style={{backgroundImage : `url(${mainImage})`}}></section>
       
       {/* Project Description */}
       <section ref={ref3} className={`grid grid-cols-1 xl:grid-cols-3 w-full my-12 lg:my-24 gap-12 lg:w-[70%] opacity-0 transition-all duration-[1500ms] relative top-8 ${inView3 ? "show" : ""}`}>
@@ -106,7 +106,7 @@ const ProjectPage = ({title,description,intro,mainImage,gif1,gif2,gif3,gif4,role
    
       <section  className="w-full flex flex-col items-center mb-36" >
         {/* Gif 1 */}
-        <div ref={ref4} className={`border border-black border-4 lg:border-1 min-h-[25vh] md:min-h-[30vh] lg:min-h-[70vh] mb-16 bg-cover bg-no-repeat bg-center w-full opacity-0 transition-all duration-[1500ms] relative top-8 ${inView4 ? "show" : ""}`} style={{backgroundImage : `url(${gif1})`}}></div>
+        <div ref={ref4} className={`border border-black border-4 lg:border-1 min-h-[50vw] lg:min-h-[350px] xl:min-h-[570px] mb-16 bg-cover bg-no-repeat bg-center w-full opacity-0 transition-all duration-[1500ms] relative top-8 ${inView4 ? "show" : ""}`} style={{backgroundImage : `url(${gif1})`}}></div>
         {/* Gif 1 description */}
         <div ref={ref5} className={`lg:w-[70%] opacity-0 transition-all duration-[1500ms] relative top-8 ${inView5 ? "show" : ""}`} >
           <h2 className="pb-6 text-2xl underline text-center">{feature1}</h2>
@@ -121,7 +121,7 @@ const ProjectPage = ({title,description,intro,mainImage,gif1,gif2,gif3,gif4,role
         gif2 && 
         <section className="w-full flex flex-col items-center mb-36">
           {/* Gif 2 */}
-          <div ref={ref6} className={`border border-black border-4 lg:border-1 min-h-[25vh] md:min-h-[30vh] lg:min-h-[70vh] mb-16 bg-cover bg-no-repeat bg-center w-full opacity-0 transition-all duration-[1500ms] relative top-8 ${inView6 ? "show" : ""}`} style={{backgroundImage : `url(${gif2})`}}></div>
+          <div ref={ref6} className={`border border-black border-4 lg:border-1 min-h-[50vw] lg:min-h-[350px] xl:min-h-[570px] mb-16 bg-cover bg-no-repeat bg-center w-full opacity-0 transition-all duration-[1500ms] relative top-8 ${inView6 ? "show" : ""}`} style={{backgroundImage : `url(${gif2})`}}></div>
           {/* Gif 2 description */}
           <div ref={ref7} className={`lg:w-[70%] opacity-0 transition-all duration-[1500ms] relative top-8 ${inView7 ? "show" : ""}`}>
             <h2 className="pb-6 text-2xl underline  text-center">{feature2}</h2>
@@ -134,7 +134,7 @@ const ProjectPage = ({title,description,intro,mainImage,gif1,gif2,gif3,gif4,role
       {gif3 && 
         <section className="w-full flex flex-col items-center">
         {/* Gif 3 */}
-        <div ref={ref8} className={`border border-black border-4 lg:border-1 min-h-[25vh] md:min-h-[30vh] lg:min-h-[70vh] mb-16 bg-cover bg-no-repeat bg-center w-full opacity-0 transition-all duration-[1500ms] relative top-8 ${inView8 ? "show" : ""}`} style={{backgroundImage : `url(${gif3})`}}></div>
+        <div ref={ref8} className={`border border-black border-4 lg:border-1 min-h-[50vw] lg:min-h-[350px] xl:min-h-[570px] mb-16 bg-cover bg-no-repeat bg-center w-full opacity-0 transition-all duration-[1500ms] relative top-8 ${inView8 ? "show" : ""}`} style={{backgroundImage : `url(${gif3})`}}></div>
         {/* Gif 3 description */}
         <div ref={ref9} className={`lg:w-[70%] opacity-0 transition-all duration-[1500ms] relative top-8 ${inView9 ? "show" : ""}`}>
           <h2 className="pb-6 text-2xl underline  text-center">{feature3}</h2>
@@ -147,7 +147,7 @@ const ProjectPage = ({title,description,intro,mainImage,gif1,gif2,gif3,gif4,role
       {gif4 && 
         <section className="w-full flex flex-col items-center mb-36">
         {/* Gif 1 */}
-        <div ref={ref10} className={`border border-black border-4 lg:border-1 min-h-[25vh] md:min-h-[30vh] lg:min-h-[70vh] mb-16 bg-cover bg-no-repeat bg-center w-full opacity-0 transition-all duration-[1500ms] relative top-8 ${inView10 ? "show" : ""}`} style={{backgroundImage : `url(${gif1})`}}></div>
+        <div ref={ref10} className={`border border-black border-4 lg:border-1 min-h-[50vw] lg:min-h-[350px] xl:min-h-[570px] mb-16 bg-cover bg-no-repeat bg-center w-full opacity-0 transition-all duration-[1500ms] relative top-8 ${inView10 ? "show" : ""}`} style={{backgroundImage : `url(${gif1})`}}></div>
         {/* Gif 1 description */}
         <div ref={ref11} className={`lg:w-[70%] opacity-0 transition-all duration-[1500ms] relative top-8 ${inView11 ? "show" : ""}`}>
           <h2 className="pb-6 text-2xl underline  text-center">{feature1}</h2>
