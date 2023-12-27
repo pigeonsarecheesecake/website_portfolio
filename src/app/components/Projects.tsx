@@ -37,14 +37,14 @@ const Projects = () => {
         },
         {
             projectId:2,
-            projectName:"To-do List",
+            projectName:"Portfolio",
             backgroundColor:"bg-[#BBA9D1]",
-            imgPath:"/to-do.png",
+            imgPath:"/portfolio-home.png",
             gridSize:"md:col-span-1",
-            width:150,
+            width:300,
             reference:ref2,
             inView:inView2,
-            filePath:"/weather-forecast"
+            filePath:"/portfolio"
         },
         {
             projectId:3,
@@ -54,7 +54,8 @@ const Projects = () => {
             gridSize:"md:col-span-1",
             width:250,
             reference:ref3,
-            inView:inView3
+            inView:inView3,
+            filePath:"/weather-forecast"
         },
         {
             projectId:4,
@@ -64,7 +65,8 @@ const Projects = () => {
             gridSize:"md:col-span-2",
             width:250,
             reference:ref4,
-            inView:inView4
+            inView:inView4,
+            filePath:"/refrigerant-system"
         }
     ]
     
