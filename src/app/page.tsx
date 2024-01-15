@@ -8,7 +8,7 @@ export default function Page() {
     <section className=" flex flex-wrap justify-between  ">
       {/* Landing Left side (Title) */}
       <div className="flex flex-col justify-center ">
-        <h1 className='text-4xl md:text-6xl pb-4'>Hi, I'm William Ryuputra </h1>
+        <h1 className='text-4xl md:text-6xl pb-4'>Hi I&#39;m William Ryuputra</h1>
         <p className='md:text-2xl'>Software Engineer  |  UI/UX Designer  |  Technical Specialist</p>
         {/* Socials */}
         <ul className="socials-logos pt-4 flex md:hidden ">
