@@ -3,7 +3,7 @@ import AboutMain from "../components/AboutMain"
 import AboutEducation from "../components/AboutEducation"
 import AboutPictures from "../components/AboutPictures"
 import { useInView } from 'react-intersection-observer';
-const page = () => {
+const Page = () => {
   const {ref:ref1,inView} = useInView({
     threshold:.1,
     triggerOnce:true
@@ -34,4 +34,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

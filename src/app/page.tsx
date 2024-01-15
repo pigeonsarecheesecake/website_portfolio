@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Projects from './components/Projects';
 import Experience from './components/Experience';
-export default function Home() {
+export default function Page() {
   return (
   <main className="min-h-screen items-center px-8 md:px-12 lg:px-48 2xl:px-72">
     {/* Landing Page */}

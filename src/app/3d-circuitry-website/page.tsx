@@ -2,7 +2,7 @@
 
 import ProjectPage from "../components/ProjectPage"
 
-const page = () => {
+const Page = () => {
   // Props
   const props = {
     title: "3D-Circuitry Website",
@@ -41,4 +41,4 @@ Initially, I intended to develop each interactive feature from scratch, but time
   )
 }
 
-export default page
+export default Page

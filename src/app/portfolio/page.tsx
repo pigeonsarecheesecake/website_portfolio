@@ -1,7 +1,7 @@
 'use client'
 import ProjectPage from "../components/ProjectPage"
 
-const page = () => {
+const Page = () => {
     // Props
     const props = {
         title: "Website Portfolio",
@@ -43,4 +43,4 @@ To achieve this, I used the map method to iterate through an array of objects. E
   )
 }
 
-export default page
+export default Page

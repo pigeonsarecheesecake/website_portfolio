@@ -1,7 +1,7 @@
 'use client'
 import ProjectPage from "../components/ProjectPage"
 
-const page = () => {
+const Page = () => {
     // Props
     const props = {
         title: "Refrigerant Inventory System",
@@ -41,4 +41,4 @@ Supervisors can also perform search functions on the database. They can look up 
   )
 }
 
-export default page
+export default Page
