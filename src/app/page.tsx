@@ -5,7 +5,7 @@ export default function Page() {
   return (
   <main className="min-h-screen items-center px-8 md:px-12 lg:px-48 2xl:px-72">
     {/* Landing Page */}
-    <section className=" flex flex-wrap justify-between  ">
+    <section className=" flex flex-wrap justify-between max-h-40vh]  ">
       {/* Landing Left side (Title) */}
       <div className="flex flex-col justify-center ">
         <h1 className='text-4xl md:text-6xl pb-4'>Hi I&#39;m William Ryuputra</h1>
