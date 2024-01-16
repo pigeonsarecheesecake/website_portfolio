@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Projects from './components/Projects';
 import Experience from './components/Experience';
-export default function Page() {
+export default function Home() {
   return (
   <main className="min-h-screen items-center px-8 md:px-12 lg:px-48 2xl:px-72">
     {/* Landing Page */}
@@ -29,8 +29,8 @@ export default function Page() {
         </ul>
       </div>
       {/* Landing Right side (Logo) */}
-      <div className='rotate-12 lg:hover:rotate-0 transition-all duration-[500ms]'>
-        <Image className="hidden 2xl:block" src="/logo.png" width={400} height={500} alt='Landing page logo' />
+      <div className='rotate-12 lg:hover:rotate-0 transition-all duration-[500ms] relative'>
+        <Image className="hidden 2xl:block" src="/logo.png" width={400} height={400} alt='Landing page logo' />
         <Image className="hidden md:block 2xl:hidden" src="/logo.png" width={250} height={250} alt='Landing page logo' />
         <Image className="md:hidden" src="/logo.png" width={200} height={200} alt='Landing page logo' />
       </div>

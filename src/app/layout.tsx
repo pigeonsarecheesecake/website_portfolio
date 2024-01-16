@@ -1,10 +1,18 @@
 import type { Metadata } from 'next'
-import localFont from 'next/font/local'
+import localFont from '@next/font/local'
 import Navigation from '@/app/components/NavigationBar'
 import Footer from './components/Footer'
 import '@/app/ui/globals.css'
 
-const newSpirit = localFont({ src: './font/New Spirit Medium.otf' })
+const newSpirit = localFont({ 
+  src:[
+    {
+      path:'./font/New Spirit Medium.otf',
+      weight:"400"
+    },
+  ],
+  variable:"--font-new-spirit" 
+})
 
 
 export const metadata: Metadata = {
@@ -18,8 +26,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={newSpirit.className}>
+    // <body className={newSpirit.className}>
+    <html className={`${newSpirit.variable}`} lang="en" >
+      <body >
         {/* Navigation Bar in layout since it's shared among pages*/}
         <Navigation />
         {children}

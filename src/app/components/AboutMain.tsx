@@ -1,12 +1,8 @@
-
-import localFont from 'next/font/local'
-
-const newSpiritNormal= localFont({ src: '../font/New Spirit Regular.otf' })
 const AboutMain = () => {
   return (
     <>
     {/* About me text */}
-    <div className= {`col-span-2 xl:col-span-1 flex flex-col text-white bg-[#383838] p-8 md:p-16 ${newSpiritNormal.className}`} >
+    <div className= {`col-span-2 xl:col-span-1 flex flex-col text-white bg-[#383838] p-8 md:p-16 `} >
         <h1 className='text-4xl md:text-6xl pb-6 '>Welcome 🌱</h1>
         <hr className=" w-12 " />
         <p className=" py-8 whitespace-pre-wrap">{`My name is William Ryuputra, and I'm a software engineer 🖥️. Why do I torture myself by spending hours just to find a missing bracket or Googling how to center a div for the 100th time, you ask? Well, you can compare it to enjoying spicy food. Spiciness is a sensation. It's an uncomfortable feeling that deters some, but for people like me, the "painful" sensation is what makes it addicting.
