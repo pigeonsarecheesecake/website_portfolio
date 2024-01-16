@@ -77,7 +77,7 @@ const Projects = () => {
                             return(
                                 <Link ref={project.reference} key={project.projectId} className={`${project.gridSize} rounded-3xl row-span-2 opacity-0 transition-all duration-[1500ms] relative top-8 ${project.inView ? "show" : ""} flex justify-center items-center `} href={`${project.filePath}`}>
                                     <li className={` flex items-center justify-center rounded-2xl  ${project.backgroundColor} w-full h-full transition-all ease-linear lg:hover:scale-105 relative`}>
-                                        <Image className="" src={project.imgPath} width={project.width} height={500} alt={`Project ${project.projectName}`}/>
+                                        <Image className="" src={project.imgPath} width={project.width} height={400} alt={`Project ${project.projectName}`}/>
                                         <p className="absolute bottom-0 py-6 md:p-10  md:bottom-0 md:right-0 white text-white text-xl text-center md:text-start">{`${project.projectName} ↗`}</p>
                                     </li>
                                 </Link>
