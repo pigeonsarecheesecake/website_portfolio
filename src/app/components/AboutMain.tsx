@@ -38,7 +38,7 @@ If you're reading this, don't stop chasing your dreams. Fall in love with the pr
             </div>
         </div>
         {/* About me picture*/}
-        <div className="h-[90%] border-b-2 border-black bg-cover bg-no-repeat bg-center" style={{backgroundImage:'url(/portrait.JPG)'}}></div>
+        <div className="h-[90%] border-b-2 border-black bg-cover bg-no-repeat bg-center" style={{backgroundImage:'url(/portrait.jpg)'}}></div>
     </div>
     </>
   )
