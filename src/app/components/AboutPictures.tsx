@@ -46,6 +46,7 @@ const AboutPictures = () => {
                 (polaroid)=>{
                     return(
                         <li key={polaroid.polaroidId} className={`flex flex-col items-center  pt-4 min-h-[500px] bg-[#FAFAFA] shadow-[20px_20px_16px_0px_rgba(0,0,0,.1)] `}>
+                            {/* A trick to separate the background image using normal css property and not tailwind */}
                             <div className={`w-[90%] h-[65%] bg-cover bg-no-repeat bg-center border shadow-inner `} style={{backgroundImage : `url(${polaroid.imgSource}) `}}>
                             </div>
                             {polaroid.handWriting}
