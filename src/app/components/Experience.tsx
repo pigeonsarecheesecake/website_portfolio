@@ -18,13 +18,13 @@ const Experience = () => {
     {/* Experience Right Side (Experiences) */}
     <div className={`flex flex-col justify-between opacity-0 transition-all duration-[1500ms] ${inView2 ? "show" : ""}`} ref={ref2}>
         <div className="py-4 md:py-8">
-            <h2 className="md:text-4xl">Front-End Developer Intern</h2>
-            <p className="md:text-2xl">3D Circuitry | June 2023 - January 2024</p>
+            <h2 className="md:text-4xl">Technical Specialist</h2>
+            <p className="md:text-2xl">Apple | July 2022 - Current</p>
         </div>
         <hr></hr>
         <div className="py-4 md:py-8">
-            <h2 className="md:text-4xl">Technical Specialist</h2>
-            <p className="md:text-2xl">Apple | July 2022 - Current</p>
+            <h2 className="md:text-4xl">Front-End Developer Intern</h2>
+            <p className="md:text-2xl">3D Circuitry | June 2023 - January 2024</p>
         </div>
         <hr></hr>
         <div className="py-4 md:py-8">

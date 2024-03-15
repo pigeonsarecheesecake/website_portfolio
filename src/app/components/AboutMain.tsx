@@ -13,7 +13,7 @@ My primary language is JavaScript. Besides programming, I enjoy reading books an
 
 If you're reading this, don't stop chasing your dreams. Fall in love with the process, and you'll find it's easier to change yourself for the better than trying to change others. Confidence lies within humility, while insecurity lies within arrogance. Be kind!`}</p>
         <div className="flex flex-col  ">
-            <a className="underline" href="/Ryuputra_William_Resume.pdf" target='_blank'>Resume ↗</a>
+            <a className="underline" href="/Ryuputra_Resume.pdf" target='_blank'>Resume ↗</a>
             <a className="underline" href="https://www.linkedin.com/in/william-ryuputra-470856197/" target='_blank'>LinkedIn ↗</a>
         </div>
     </div>
