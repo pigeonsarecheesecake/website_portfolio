@@ -19,7 +19,7 @@ const Experience = () => {
     <div className={`flex flex-col justify-between opacity-0 transition-all duration-[1500ms] ${inView2 ? "show" : ""}`} ref={ref2}>
         <div className="py-4 md:py-8">
             <h2 className="md:text-4xl">Front-End Developer Intern</h2>
-            <p className="md:text-2xl">3D Circuitry | June 2023 - Current</p>
+            <p className="md:text-2xl">3D Circuitry | June 2023 - January 2024</p>
         </div>
         <hr></hr>
         <div className="py-4 md:py-8">
@@ -29,12 +29,12 @@ const Experience = () => {
         <hr></hr>
         <div className="py-4 md:py-8">
             <h2 className="md:text-4xl">Business Analyst</h2>
-            <p className="md:text-2xl">MetaRetail | February 2021 - June 2022</p>
+            <p className="md:text-2xl">MetaRetail | November 2021 - June 2022</p>
         </div>
         <hr></hr>
         <div className="py-4 md:py-8">
             <h2 className="md:text-4xl">Python Tutor</h2>
-            <p className="md:text-2xl">Southern CT State University | September 2019 - June 2020</p>
+            <p className="md:text-2xl">Southern CT State University | September 2019 - May 2020</p>
         </div>
         <hr></hr>
         <div className="py-4 md:py-8">
