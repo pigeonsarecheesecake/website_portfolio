@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import localFont from '@next/font/local'
+import localFont from "next/font/local"
 import Navigation from '@/app/components/NavigationBar'
 import Footer from './components/Footer'
 import '@/app/ui/globals.css'

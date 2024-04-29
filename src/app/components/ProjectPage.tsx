@@ -74,7 +74,7 @@ const ProjectPage = ({title,description,intro,mainImage,gif1,gif2,gif3,gif4,role
       {/* Project Title */}
       <section ref={ref1} className={`opacity-0 transition-all duration-[1500ms] relative top-8 ${inView ? "show" : ""}`}>
         <h1 className="text-4xl md:text-6xl text-center pb-6">{title}</h1> 
-        <p className="md:text-2xl text-center whitespace-pre">{description}</p>
+        <p className="md:text-2xl text-center ">{description}</p>
       </section>
 
       {/* Main Image */}

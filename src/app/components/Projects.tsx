@@ -27,43 +27,43 @@ const Projects = () => {
         {
             projectId:1,
             projectName:"3D Circuitry Website",
-            backgroundColor:"bg-[#FFDF8C]",
-            imgPath:"/3d_laptop.png",
+            backgroundColor:"bg-[#FFD361]",
+            imgPath:"/3d-laptop.png",
             gridSize:"md:col-span-2",
-            width:300,
+            width:400,
             reference:ref1,
             inView:inView,
             filePath:"/3d-circuitry-website"
         },
         {
             projectId:2,
-            projectName:"Portfolio",
-            backgroundColor:"bg-[#BBA9D1]",
-            imgPath:"/portfolio-home.png",
+            projectName:"Marvel Legends API",
+            backgroundColor:"bg-[#7488B9]",
+            imgPath:"/api-laptop.png",
             gridSize:"md:col-span-1",
-            width:300,
+            width:250,
             reference:ref2,
             inView:inView2,
-            filePath:"/portfolio"
+            filePath:"/marvel-legends-api"
         },
         {
             projectId:3,
-            projectName:"Weather Forecast",
-            backgroundColor:"bg-[#7488B9]",
-            imgPath:"/weather.png",
+            projectName:"Portfolio",
+            backgroundColor:"bg-[#BBA9D1]",
+            imgPath:"/portfolio-laptop.png",
             gridSize:"md:col-span-1",
-            width:250,
+            width:300,
             reference:ref3,
             inView:inView3,
-            filePath:"/weather-forecast"
+            filePath:"/portfolio"
         },
         {
             projectId:4,
             projectName:"Refrigerant System",
             backgroundColor:"bg-[#7BA880]",
-            imgPath:"/capstone.png",
+            imgPath:"/refrigerant-laptop.png",
             gridSize:"md:col-span-2",
-            width:250,
+            width:400,
             reference:ref4,
             inView:inView4,
             filePath:"/refrigerant-system"
